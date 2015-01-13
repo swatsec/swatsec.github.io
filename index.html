@@ -1,0 +1,58 @@
+<html>
+
+
+
+  <center>
+
+
+<button onclick="myFunction()">black</button>
+
+<script>
+function myFunction() {
+    document.body.style.background = "#0f0000 ";
+}
+</script>
+  <button onclick="maFunction()">white</button>
+
+<script>
+function maFunction() {
+    document.body.style.background = "#FFFFFF  ";
+}
+</script>
+
+  <button onclick="playPause()">Play/Pause</button> 
+  <button onclick="makeBig()">Big</button>
+  <button onclick="makeSmall()">Small</button>
+  <button onclick="makeNormal()">Normal</button>
+  <br> 
+ <center> <video id="video1" width="1500" height="890" poster="r.jpg" autoplay loop src="rocket taking off.webm">
+  </video>
+</div> 
+
+<script> 
+var myVideo = document.getElementById("video1"); 
+
+function playPause() { 
+    if (myVideo.paused) 
+        myVideo.play(); 
+    else 
+        myVideo.pause(); 
+} 
+
+function makeBig() { 
+    myVideo.width = 1560; 
+    myVideo.height = 700;
+} 
+
+function makeSmall() { 
+    myVideo.width = 1020; 
+} 
+
+function makeNormal() { 
+    myVideo.width = 1420; 
+    myVideo.height = 600;
+} 
+</script> 
+
+    
+</html>
