@@ -2,30 +2,30 @@
 
 <link rel="shortcut icon"
  	href="wylem.ico" />
- 	<title>Swatsec</title>
+ 	<title>I'm Learning HTML</title>
 
   <center>
 
 
-<button onclick="myFunction()">black</button>
+<button onclick="blackFunction()">Black</button>
 
 <script>
-function myFunction() {
+function blackFunction() {
     document.body.style.background = "#0f0000 ";
 }
 </script>
-  <button onclick="maFunction()">white</button>
+  <button onclick="whiteFunction()">white</button>
 
 <script>
-function maFunction() {
+function whiteFunction() {
     document.body.style.background = "#FFFFFF  ";
 }
 </script>
 
-  <button onclick="playPause()">Play/Pause</button> 
-  <button onclick="makeBig()">Big</button>
-  <button onclick="makeSmall()">Small</button>
-  <button onclick="makeNormal()">Normal</button>
+  <button onclick="play()">+</button> 
+  <button onclick="makeBig()"><</button>
+  <button onclick="makeSmall()">></button>
+  <button onclick="makeNormal()">=</button>
   <br> 
  <center> <video id="video1" width="1500" height="890" poster="r.jpg" autoplay loop src="rocket taking off.webm">
   </video>
@@ -34,7 +34,7 @@ function maFunction() {
 <script> 
 var myVideo = document.getElementById("video1"); 
 
-function playPause() { 
+function play() { 
     if (myVideo.paused) 
         myVideo.play(); 
     else 
