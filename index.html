@@ -22,7 +22,7 @@ function whiteFunction() {
 }
 </script>
 
-  <button onclick="play()">+</button> 
+  <button onclick="playPause()">+</button> 
   <button onclick="makeBig()"><</button>
   <button onclick="makeSmall()">></button>
   <button onclick="makeNormal()">=</button>
@@ -34,7 +34,7 @@ function whiteFunction() {
 <script> 
 var Video = document.getElementById("video1"); 
 
-function play() { 
+function playPause() { 
     if (Video.paused) 
         Video.play(); 
     else 
